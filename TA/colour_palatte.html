@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2rem;
+        background: #f4f4f4;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+
+      .palette-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .color-group {
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 160px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .color-swatch {
+        height: 40px;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.5rem;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .color-name {
+        font-size: 13px;
+        margin-bottom: 0.3rem;
+        font-weight: 600;
+      }
+
+      .color-code {
+        font-size: 11px;
+        color: #555;
+        margin-bottom: 0.5rem;
+      }
+
+      .text-black {
+        background-color: #1e1e1e;
+      }
+      .text-white {
+        background-color: #ffffff;
+        color: #000;
+        border: 1px solid #ddd;
+      }
+      .text-gray {
+        background-color: #626262;
+      }
+      .text-light-gray {
+        background-color: #c9c9c9;
+        color: #000;
+      }
+      .text-disabled {
+        background-color: #cbcbe0;
+        color: #000;
+      }
+      .text-validation {
+        background-color: #ffc043;
+        color: #000;
+      }
+      .text-error {
+        background-color: #ed4242;
+      }
+      .text-success {
+        background-color: #1abc5e;
+      }
+
+      /* Example Palette (you can expand these) */
+      .primary-500 {
+        background-color: #007940;
+      }
+      .success-500 {
+        background-color: #1abc5e;
+      }
+      .info-500 {
+        background-color: #2c88d9;
+      }
+      .warning-500 {
+        background-color: #e8b000;
+      }
+      .danger-500 {
+        background-color: #de4c2d;
+      }
+
+      .white-500 {
+        background-color: #f2f2f2;
+        color: #000;
+        border: 1px solid #ccc;
+      }
+      .black-500 {
+        background-color: #4d4d4d;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Color Palette</h2>
+
+    <div class="palette-container">
+      <!-- Primary -->
+      <div class="color-group">
+        <div class="color-name">Primary</div>
+        <div class="color-swatch primary-500">#007940</div>
+      </div>
+
+      <!-- Success -->
+      <div class="color-group">
+        <div class="color-name">Success</div>
+        <div class="color-swatch success-500">#1ABC5E</div>
+      </div>
+
+      <!-- Info -->
+      <div class="color-group">
+        <div class="color-name">Info</div>
+        <div class="color-swatch info-500">#2C88D9</div>
+      </div>
+
+      <!-- Warning -->
+      <div class="color-group">
+        <div class="color-name">Warning</div>
+        <div class="color-swatch warning-500">#E8B000</div>
+      </div>
+
+      <!-- Danger -->
+      <div class="color-group">
+        <div class="color-name">Danger</div>
+        <div class="color-swatch danger-500">#DE4C2D</div>
+      </div>
+
+      <!-- White -->
+      <div class="color-group">
+        <div class="color-name">White</div>
+        <div class="color-swatch white-500">#F2F2F2</div>
+      </div>
+
+      <!-- Black -->
+      <div class="color-group">
+        <div class="color-name">Black</div>
+        <div class="color-swatch black-500">#4D4D4D</div>
+      </div>
+
+      <!-- Text -->
+      <div class="color-group">
+        <div class="color-name">Text</div>
+        <div class="color-swatch text-black">Black</div>
+        <div class="color-swatch text-white">White</div>
+        <div class="color-swatch text-gray">Gray</div>
+        <div class="color-swatch text-light-gray">Light Gray</div>
+        <div class="color-swatch text-disabled">Disabled</div>
+        <div class="color-swatch text-validation">Validation</div>
+        <div class="color-swatch text-error">Error</div>
+        <div class="color-swatch text-success">Success</div>
+      </div>
+    </div>
+  </body>
+</html>
