@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECATUR Design System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2rem;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      /* Typography */
+      .headline-1 {
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 110%;
+      }
+      .headline-2 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-3 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-4 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-5 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .body-1 {
+        font-size: 18px;
+        line-height: 140%;
+      }
+      .body-2 {
+        font-size: 16px;
+        line-height: 140%;
+      }
+      .text-large {
+        font-size: 20px;
+      }
+      .text-normal {
+        font-size: 20px;
+      }
+      .text-placeholder {
+        font-size: 16px;
+        color: #999;
+      }
+      .text-title {
+        font-size: 12px;
+      }
+
+      /* Buttons */
+      .btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+      .btn-sm {
+        font-size: 12px;
+        padding: 0.25rem 0.75rem;
+      }
+      .btn-md {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+      }
+      .btn-lg {
+        font-size: 16px;
+        padding: 0.75rem 1.5rem;
+      }
+      .btn-primary {
+        background-color: #007940;
+        color: white;
+      }
+      .btn-outline {
+        background-color: white;
+        color: #007940;
+        border: 2px solid #007940;
+      }
+      .btn-filled {
+        background-color: #52d17a;
+        color: white;
+      }
+      .btn-disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+      }
+      .btn-danger {
+        background-color: #de4c2d;
+        color: white;
+      }
+      .btn-danger-outline {
+        background-color: white;
+        color: #de4c2d;
+        border: 2px solid #de4c2d;
+      }
+
+      /* Color Palette */
+      .palette-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .color-box {
+        border-radius: 8px;
+        padding: 1rem;
+        background: white;
+        width: 160px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .color-sample {
+        height: 40px;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .c-primary {
+        background-color: #007940;
+      }
+      .c-success {
+        background-color: #1abc5e;
+      }
+      .c-info {
+        background-color: #2c88d9;
+      }
+      .c-warning {
+        background-color: #e8b000;
+        color: #000;
+      }
+      .c-danger {
+        background-color: #de4c2d;
+      }
+      .c-white {
+        background-color: #f2f2f2;
+        color: #000;
+      }
+      .c-black {
+        background-color: #4d4d4d;
+      }
+
+      /* Icons */
+      .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+        gap: 1rem;
+        max-width: 960px;
+      }
+      .icon-item {
+        background: white;
+        border: 1px dashed #ccc;
+        border-radius: 8px;
+        height: 48px;
+        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #007940;
+      }
+
+      /* Input Text & Card Style */
+      .input-group {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      .input-group i {
+        background: #007940;
+        color: white;
+        padding: 0.75rem;
+      }
+      .input-group input {
+        border: none;
+        padding: 0.75rem;
+        flex: 1;
+        outline: none;
+        font-size: 14px;
+      }
+      .profile-card,
+      .profile-card-expanded {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 1rem;
+        background: white;
+        margin-bottom: 1rem;
+      }
+      .profile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .profile-header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+      }
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .rating {
+        color: #007940;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+      .profile-details {
+        margin-top: 1rem;
+        background: #e7f6ec;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      .lang-badges span {
+        border: 1px solid #007940;
+        border-radius: 20px;
+        padding: 0.25rem 0.75rem;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        color: #007940;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BECATUR Design System</h1>
+
+    <!-- Input Text Section -->
+    <div class="section">
+      <h2>Input Text</h2>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="text" placeholder="Email" />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="text" placeholder="" />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="password" placeholder="Email" />
+        <i class="fas fa-eye-slash" style="color: #ccc; padding: 0 0.75rem"></i>
+      </div>
+    </div>
+
+    <!-- Profile Card Section -->
+    <div class="section">
+      <div class="profile-card">
+        <div class="profile-header">
+          <img src="https://i.pravatar.cc/100" alt="Profile" />
+          <div class="profile-info">
+            <strong>Heru Kurniawan</strong>
+            <div class="rating">
+              <i class="fas fa-star"></i> 4.99 &nbsp;
+              <i class="fas fa-map-marker-alt"></i> 2,34 km
+            </div>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="profile-card-expanded">
+        <div class="profile-header">
+          <img src="https://i.pravatar.cc/100" alt="Profile" />
+          <div class="profile-info">
+            <strong>Heru Kurniawan</strong>
+            <div class="rating">
+              <i class="fas fa-star"></i> 4.99 &nbsp;
+              <i class="fas fa-map-marker-alt"></i> 2,34 km
+            </div>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="profile-details">
+          <p>
+            <strong><i class="fas fa-user"></i> Pengalaman Memandu</strong>
+          </p>
+          <p>
+            Pemandu wisata yang ramah dan informatif. Pengalaman yang sangat
+            menyenangkan!
+          </p>
+          <hr />
+          <p>
+            <strong><i class="fas fa-globe"></i> Bahasa</strong>
+          </p>
+          <div class="lang-badges">
+            <span>Indonesia</span>
+            <span>Inggris</span>
+            <span>Jerman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tracking Pesanan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #c8ecff;
+        padding: 2rem;
+      }
+
+      .tracking-container {
+        border: 2px dashed #b77df1;
+        border-radius: 12px;
+        padding: 2rem;
+        max-width: 400px;
+        margin: auto;
+        background-color: #c8ecff;
+      }
+
+      .tracking-title {
+        color: #b77df1;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      .step-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .step {
+        text-align: center;
+        width: 100px;
+      }
+
+      .icon-circle {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background-color: #e5fbe6;
+        color: #007940;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        border: 2px solid #a7e5b2;
+      }
+
+      .text {
+        margin-top: 0.5rem;
+        font-size: 12px;
+        color: #333;
+      }
+
+      .arrow {
+        font-size: 20px;
+        color: #007940;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tracking-container">
+      <div class="tracking-title">Tracking Pesanan</div>
+
+      <div class="step-row">
+        <div class="step">
+          <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="text">Menjemput Customer</div>
+        </div>
+        <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step">
+          <div class="icon-circle"><i class="fas fa-bicycle"></i></div>
+          <div class="text">Menuju Lokasi Tujuan</div>
+        </div>
+        <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step">
+          <div class="icon-circle"><i class="fas fa-list"></i></div>
+          <div class="text">Selesai</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

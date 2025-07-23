@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECATUR Design System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2rem;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      /* Typography */
+      .headline-1 {
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 110%;
+      }
+      .headline-2 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-3 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-4 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .headline-5 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .body-1 {
+        font-size: 18px;
+        line-height: 140%;
+      }
+      .body-2 {
+        font-size: 16px;
+        line-height: 140%;
+      }
+      .text-large {
+        font-size: 20px;
+      }
+      .text-normal {
+        font-size: 20px;
+      }
+      .text-placeholder {
+        font-size: 16px;
+        color: #999;
+      }
+      .text-title {
+        font-size: 12px;
+      }
+
+      /* Buttons */
+      .btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+      .btn-sm {
+        font-size: 12px;
+        padding: 0.25rem 0.75rem;
+      }
+      .btn-md {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+      }
+      .btn-lg {
+        font-size: 16px;
+        padding: 0.75rem 1.5rem;
+      }
+      .btn-primary {
+        background-color: #007940;
+        color: white;
+      }
+      .btn-outline {
+        background-color: white;
+        color: #007940;
+        border: 2px solid #007940;
+      }
+      .btn-filled {
+        background-color: #52d17a;
+        color: white;
+      }
+      .btn-disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+      }
+      .btn-danger {
+        background-color: #de4c2d;
+        color: white;
+      }
+      .btn-danger-outline {
+        background-color: white;
+        color: #de4c2d;
+        border: 2px solid #de4c2d;
+      }
+
+      /* Color Palette */
+      .palette-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .color-box {
+        border-radius: 8px;
+        padding: 1rem;
+        background: white;
+        width: 160px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .color-sample {
+        height: 40px;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .c-primary {
+        background-color: #007940;
+      }
+      .c-success {
+        background-color: #1abc5e;
+      }
+      .c-info {
+        background-color: #2c88d9;
+      }
+      .c-warning {
+        background-color: #e8b000;
+        color: #000;
+      }
+      .c-danger {
+        background-color: #de4c2d;
+      }
+      .c-white {
+        background-color: #f2f2f2;
+        color: #000;
+      }
+      .c-black {
+        background-color: #4d4d4d;
+      }
+
+      /* Icons */
+      .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+        gap: 1rem;
+        max-width: 960px;
+      }
+      .icon-item {
+        background: white;
+        border: 1px dashed #ccc;
+        border-radius: 8px;
+        height: 48px;
+        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #007940;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BECATUR Design System</h1>
+
+    <div class="section">
+      <h2>Typography</h2>
+      <div class="headline-1">Headline 1</div>
+      <div class="headline-2">Headline 2</div>
+      <div class="headline-3">Headline 3</div>
+      <div class="headline-4">Headline 4</div>
+      <div class="headline-5">Headline 5</div>
+      <p class="body-1">Body 1 - digunakan untuk paragraf utama</p>
+      <p class="body-2">Body 2 - teks pendukung atau deskripsi</p>
+      <p class="text-large">Text Large</p>
+      <p class="text-placeholder">Placeholder text</p>
+      <p class="text-title">Text Title</p>
+    </div>
+
+    <div class="section">
+      <h2>Buttons</h2>
+      <button class="btn btn-primary btn-sm">Small</button>
+      <button class="btn btn-outline btn-md">Medium</button>
+      <button class="btn btn-filled btn-lg">Large</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-danger-outline">Danger Outline</button>
+      <button class="btn btn-disabled" disabled>Disabled</button>
+    </div>
+
+    <div class="section">
+      <h2>Color Palette</h2>
+      <div class="palette-container">
+        <div class="color-box">
+          <div class="color-sample c-primary">Primary</div>
+          <div>#007940</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-success">Success</div>
+          <div>#1ABC5E</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-info">Info</div>
+          <div>#2C88D9</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-warning">Warning</div>
+          <div>#E8B000</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-danger">Danger</div>
+          <div>#DE4C2D</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-white">White</div>
+          <div>#F2F2F2</div>
+        </div>
+        <div class="color-box">
+          <div class="color-sample c-black">Black</div>
+          <div>#4D4D4D</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Icons</h2>
+      <div class="icon-grid">
+        <div class="icon-item"><i class="fas fa-home"></i></div>
+        <div class="icon-item"><i class="fas fa-search"></i></div>
+        <div class="icon-item"><i class="fas fa-heart"></i></div>
+        <div class="icon-item"><i class="fas fa-user"></i></div>
+        <div class="icon-item"><i class="fas fa-cog"></i></div>
+        <div class="icon-item"><i class="fas fa-bicycle"></i></div>
+        <div class="icon-item"><i class="fas fa-utensils"></i></div>
+        <div class="icon-item"><i class="fas fa-qrcode"></i></div>
+        <div class="icon-item"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="icon-item"><i class="fas fa-shopping-cart"></i></div>
+        <div class="icon-item"><i class="fas fa-bell"></i></div>
+        <div class="icon-item"><i class="fas fa-calendar"></i></div>
+        <div class="icon-item"><i class="fas fa-check"></i></div>
+        <div class="icon-item"><i class="fas fa-play"></i></div>
+        <div class="icon-item"><i class="fas fa-stop"></i></div>
+        <div class="icon-item"><i class="fas fa-plus"></i></div>
+        <div class="icon-item"><i class="fas fa-minus"></i></div>
+        <div class="icon-item"><i class="fas fa-arrow-left"></i></div>
+        <div class="icon-item"><i class="fas fa-arrow-right"></i></div>
+        <div class="icon-item"><i class="fas fa-arrow-up"></i></div>
+        <div class="icon-item"><i class="fas fa-arrow-down"></i></div>
+        <div class="icon-item"><i class="fas fa-info"></i></div>
+        <div class="icon-item"><i class="fas fa-credit-card"></i></div>
+        <div class="icon-item"><i class="fas fa-globe"></i></div>
+        <div class="icon-item"><i class="fas fa-star"></i></div>
+        <div class="icon-item"><i class="fas fa-trash"></i></div>
+        <div class="icon-item"><i class="fas fa-lock"></i></div>
+        <div class="icon-item"><i class="fas fa-unlock"></i></div>
+        <div class="icon-item"><i class="fas fa-pen"></i></div>
+        <div class="icon-item"><i class="fas fa-list"></i></div>
+        <div class="icon-item"><i class="fas fa-bars"></i></div>
+        <div class="icon-item"><i class="fas fa-download"></i></div>
+        <div class="icon-item"><i class="fas fa-upload"></i></div>
+        <div class="icon-item"><i class="fas fa-camera"></i></div>
+        <div class="icon-item"><i class="fas fa-image"></i></div>
+        <div class="icon-item"><i class="fas fa-envelope"></i></div>
+        <div class="icon-item"><i class="fas fa-phone"></i></div>
+        <div class="icon-item"><i class="fas fa-car"></i></div>
+        <div class="icon-item"><i class="fas fa-motorcycle"></i></div>
+        <div class="icon-item"><i class="fas fa-box"></i></div>
+        <div class="icon-item"><i class="fas fa-check-circle"></i></div>
+        <div class="icon-item"><i class="fas fa-times-circle"></i></div>
+        <div class="icon-item"><i class="fas fa-circle"></i></div>
+        <div class="icon-item"><i class="fas fa-dot-circle"></i></div>
+        <div class="icon-item"><i class="fas fa-exclamation-circle"></i></div>
+        <div class="icon-item"><i class="fas fa-compass"></i></div>
+        <div class="icon-item"><i class="fas fa-globe-asia"></i></div>
+        <div class="icon-item"><i class="fas fa-hamburger"></i></div>
+        <div class="icon-item"><i class="fas fa-map"></i></div>
+        <div class="icon-item"><i class="fas fa-tags"></i></div>
+        <div class="icon-item"><i class="fas fa-store"></i></div>
+        <div class="icon-item"><i class="fas fa-route"></i></div>
+      </div>
+    </div>
+  </body>
+</html>
