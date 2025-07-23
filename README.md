@@ -11,10 +11,11 @@
 ---
 
 
+
 ## 📺 Demo Aplikasi  
 Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![WhatsApp Image 2025-07-23 at 14 15 15_51086ff4](https://github.com/user-attachments/assets/0618c335-e773-4d7d-9d0c-b2cf82bf8e76)](https://youtu.be/BxQ7c9VE840)  
+[![WhatsApp Image 2025-07-23 at 14 44 41_beabc058](https://github.com/user-attachments/assets/8f7bbfd5-71cd-477f-84cc-156862367030)](https://youtu.be/BxQ7c9VE840)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
