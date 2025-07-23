@@ -6,6 +6,7 @@
 **Judul TA**: OPTIMALISASI PENGALAMAN PENGGUNA DALAM RESERVASI BECAK MELALUI PENGEMBANGAN ANTARMUKA APLIKASI “BECATUR” DENGAN PENDEKATAN DESIGN THINKING.
 
 **Dosen Pembimbing**: Siska Arifiani, S.Kom., M.Kom.
+
 **Dosen Ko-pembimbing**: Putu Gde Ariestita., S.T., M.T. 
 
 ---
