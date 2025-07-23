@@ -1,17 +1,17 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Heru Dwi Kurniawan  
+**NRP**: 5025211055
+**Judul TA**: OPTIMALISASI PENGALAMAN PENGGUNA DALAM RESERVASI BECAK MELALUI PENGEMBANGAN ANTARMUKA APLIKASI “BECATUR” DENGAN PENDEKATAN DESIGN THINKING.
+**Dosen Pembimbing**: Siska Arifiani, S.Kom., M.Kom.
+**Dosen Ko-pembimbing**: Putu Gde Ariestita., S.T., M.T. 
 
 ---
 
 ## 📺 Demo Aplikasi  
 Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://youtu.be/BxQ7c9VE840)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
